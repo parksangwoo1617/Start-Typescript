@@ -1,0 +1,24 @@
+{
+  "name": "start-typescript",
+  "version": "1.0.0",
+  "description": "Study Typescript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parksangwoo1617/Start-Typescript.git"
+  },
+  "author": "parksangwoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parksangwoo1617/Start-Typescript/issues"
+  },
+  "homepage": "https://github.com/parksangwoo1617/Start-Typescript#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.3"
+  }
+}
