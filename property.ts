@@ -54,7 +54,7 @@ myArray = ["Bob", "Fred"];
 
 let myStr: string = myArray[0];
 
-class Animal {
+class Animal1 {
     name: string;
 }
 class Dog extends Animal {

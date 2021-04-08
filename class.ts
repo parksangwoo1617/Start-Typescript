@@ -198,5 +198,5 @@ let Greeter2 = (function () {
 });
 
 let greeter2;
-greeter2 = new Greeter2("world");
+
 console.log(greeter.greet());
