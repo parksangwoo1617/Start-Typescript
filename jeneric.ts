@@ -72,3 +72,32 @@ function createInstance<A extends Animal5>(c: new () => A): A {
 
 console.log(createInstance(Lion).keeper.nametag);
 console.log(createInstance(Bee).keeper.hasMask);
+
+function map<T, U>(array: T[], f: (item: T) => U): U[] {
+    //...
+}
+map(
+    ['a', 'b', 'c'],
+    _=>_=== 'a'
+)
+
+map<string, boolean | string>(
+    ['a', 'b', 'c'],
+    _=>_ === 'a'
+)
+
+let promise = new Promise(resolve => resolve(45))
+promise.then(result => result * 4)   // 에러, 왼쪽 연산자가 'any', 'number', 'bigint', enum 타입 중 하나여야 함.
+
+let promise2 = new Promise<number>(resolve => resolve(45))
+promise2.then(result => result * 4)          // Promise의 제네릭 타입 매개변수를 명시해서 문제 해결.
+
+type MyEvent<T = HTMLButtonElement> = {   // 제네릭 타입에 기본값 설정
+    target: myButton,
+    type: string
+}
+
+type MyEvent2<T extends HTMLElement = HTMLElement> = {
+    target: T
+    type: string
+}
